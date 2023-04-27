@@ -1,0 +1,189 @@
+/* .tabs {
+    display: flex;
+}
+
+.tab {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--color-golden);
+    padding: 3em 0;
+    border: none;
+}
+
+.tab:not(:last-child) {
+    border-right: 1px solid var(--color-white);
+}
+
+.tab.active {
+    background: var(--color-red);
+    font-weight: bold;
+}
+
+.panel {
+    display: none;
+    background-color: var(--color-golden);
+    padding: 10px;
+}
+
+.panel.active {
+    display: block;
+} */
+#menu{
+    padding:0;
+}
+
+/* .app__specialMenu {
+    flex-direction: column;
+    background: var(--color-red);
+}
+
+.app__specialMenu-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app__specialMenu-menu {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+.app__specialMenu-menu_wine,
+.app__specialMenu-menu_cocktails {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__specialMenu-menu_img {
+    width: 410px;
+    margin: 0 2rem;
+}
+
+.app__specialMenu-menu_img img {
+    width: 100%;
+    height: auto;
+}
+
+.app__specialMenu_menu_items {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+} */
+
+@media screen and (max-width: 2000px) {
+    .app__specialMenu-menu_img {
+        width: 650px;
+    }
+        .app__specialMenu-menu_img img {
+            height: 920px;
+        }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_img {
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 30px;
+        line-height: 48.5px;
+    }
+}
+
+.Tabs {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: var(--color-purple);
+    /* margin: 3.5rem auto 1.5rem;
+    padding: 2rem 1rem; */
+    padding:0;	
+    color: #E8F0F2;
+}
+
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+    width: 40%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Zen Antique', serif;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+.react-tabs__tab {
+    width: 40%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.react-tabs__tab--selected {
+    color: var(--color-yellow);
+}
+
+.react-tabs__tab--disabled {
+    color: GrayText;
+    cursor: default;
+    border: transparent;
+}
+
+.react-tabs__tab:hover {
+    background: rgba(50, 224, 196, 0.15);
+}
+
+.react-tabs__tab:first-child {
+    /* border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem; */
+    border-bottom: 1px solid white;
+}
+
+.react-tabs__tab:last-child {
+    /* border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem; */
+    border-bottom: 1px solid white;
+}
+
+.react-tabs__tab-panel {
+    display: none;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}

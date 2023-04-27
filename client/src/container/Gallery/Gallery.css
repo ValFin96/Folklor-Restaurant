@@ -1,0 +1,6 @@
+.app__gallery{
+    display: flex;
+    flex-direction: row;
+    background:url(/src/assets/bg.png);
+    padding: 4rem 0 4rem 6rem;
+}

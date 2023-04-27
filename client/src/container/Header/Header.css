@@ -1,0 +1,27 @@
+.app__header {
+    background-color: var(--color-purple);
+}
+
+#home {
+    background-image: url(../../assets/header-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app__header-h1 {
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 80px;
+}
+
+.app__header-img img {
+    width: 80%;
+}
+
+.headerImage img{
+    width: 100vw;
+    height: 100vh;
+    
+}
