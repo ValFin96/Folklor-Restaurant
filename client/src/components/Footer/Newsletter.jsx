@@ -1,4 +1,5 @@
 import React from 'react';
+import './Newsletter.css';
 import SubHeading from '../SubHeading/SubHeading';
 import './Newsletter.css';
 

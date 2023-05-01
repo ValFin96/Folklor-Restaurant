@@ -15,7 +15,6 @@ const Header = () => (
       </p>
       <button type="button" className="custom__button_desktop">Explore Menu</button>
       <button type="button" className="custom__button_mobile">Book Table</button>
-      
     </div>
 
     <div className='app__wrapper_img'>
