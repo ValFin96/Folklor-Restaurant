@@ -8,7 +8,7 @@ function SpecialMenu() {
 
 
 return (
-  <div>Hello</div>
+  <div></div>
   // <div className="app__specialMenu flex__center section__padding" id='menu'>
   //   <Tabs className="Tabs">
   //     <TabList>

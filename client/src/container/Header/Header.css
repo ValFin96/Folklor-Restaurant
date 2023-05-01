@@ -1,11 +1,5 @@
 .app__header {
-    background-color: var(--color-purple);
-}
-
-#home {
-    background-image: url(../../assets/header-image.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--color-red);
 }
 
 .app__header-h1 {
