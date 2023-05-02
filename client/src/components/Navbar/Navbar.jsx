@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-
+import { Nav, Container, Modal, Tab } from 'react-bootstrap';
+import SignUpForm from '../SignupForm/SignupForm';
+import LoginForm from '../LoginForm/LoginForm';
+import Auth from '../../utils/auth';
 import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
+    <>
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.folklor} alt="app logo" />
@@ -26,10 +31,19 @@ const Navbar = () => {
           <a href="#contact">CONTACT</a>
         </li>
       </ul>
+      {Auth.loggedIn() ? (
+          <>
       <div className="app__navbar-book">
         <a href='/' className="p__opensans">BOOK TABLE</a>
       </div>
-
+     <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+          </>
+      ) : (
+        // <div className="app__navbar-book">
+        //     <a href='/' onClick={() => setShowModal(true)}  className="p__opensans">Login / Sign Up</a>
+        //   </div>
+            <Nav.Link className="app__navbar-book" onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
+      )}
         <div className="app__navbar-smallscreen">
           <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)}/>
         
@@ -55,6 +69,39 @@ const Navbar = () => {
 
         </div>
   </nav>
+      {/* set modal data up */}
+      <Modal
+        size='lg'
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        aria-labelledby='signup-modal'>
+        {/* tab container to do either signup or login component */}
+        <Tab.Container defaultActiveKey='login'>
+          <Modal.Header closeButton>
+            <Modal.Title id='signup-modal'>
+              <Nav variant='pills'>
+                <Nav.Item>
+                  <Nav.Link eventKey='login'>Login</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Tab.Content>
+              <Tab.Pane eventKey='login'>
+                <LoginForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane>
+              <Tab.Pane eventKey='signup'>
+                <SignUpForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane>
+            </Tab.Content>
+          </Modal.Body>
+        </Tab.Container>
+      </Modal>
+  </>
   )
 }
 
