@@ -8,6 +8,8 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { AboutUs, FindUs, Footer, Gallery, Header, SpecialMenu } from './container';
 import { Navbar } from './components';
+import 'bootstrap/dist/css/bootstrap.css';
+
 import './App.css';
 
 const httpLink = createHttpLink({
