@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import { Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { Nav, Container, Modal, Tab, Alert } from 'react-bootstrap';
 import SignUpForm from '../SignupForm/SignupForm';
 import LoginForm from '../LoginForm/LoginForm';
 import Auth from '../../utils/auth';
 import images from '../../constants/images';
+
 import './Navbar.css';
 
 const Navbar = () => {
@@ -14,6 +15,7 @@ const Navbar = () => {
   return (
     <>
     <nav className="app__navbar">
+      < Alert key='primary' variant='primary'/>
       <div className="app__navbar-logo">
         <img src={images.folklor} alt="app logo" />
       </div>
