@@ -15,7 +15,6 @@ const Navbar = () => {
   return (
     <>
     <nav className="app__navbar">
-      < Alert key='primary' variant='primary'/>
       <div className="app__navbar-logo">
         <img src={images.folklor} alt="app logo" />
       </div>

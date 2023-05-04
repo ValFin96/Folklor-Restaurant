@@ -24,7 +24,7 @@ const Gallery = () => {
         <p className="p__opensans" style={{ color: '#AAA', marginTop: '2rem' }}>
           Check out our mouthwatering food photography and get a taste of what you can expect from our fusion-inspired dishes.
         </p>
-        <button type='button' className='custom__button'> View More </button>
+        <button type='button' className='custom__button_desktop'> View More </button>
       </div>
       <div className='app__gallery-images'>
         <div className='app__gallery-images_container' ref={scrollRef}>
