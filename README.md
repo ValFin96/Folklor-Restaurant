@@ -37,8 +37,11 @@ To install and run the application locally, follow these steps:
 This project was created by [Valeriya Finogeeva](https://github.com/ValFin96) and [Victoria Cook](https://github.com/VictoriaCook) . If you find any issues or have any feedback, please feel free to open an issue or submit a pull request.
 
 ## Screenshots
-![Screenhot #1]()
+![Screenhot #1](./client/src/assets/Screenshot%202023-05-08%20215331.jpg)
 
 ## Links
+Deployed Application: [Link](https://radiant-river-00428.herokuapp.com/)
+
+Repository: [Link](https://github.com/ValFin96/Folklor-Restaurant)
 
 Thank you for using our web application!
