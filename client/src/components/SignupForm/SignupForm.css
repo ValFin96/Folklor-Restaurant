@@ -1,0 +1,25 @@
+.nav-pills .nav-link.login-btn.active {
+    background-color: var(--color-red);
+}
+
+.signup-btn {
+    color: var(--color-red) !important;
+}
+
+button.btn.btn-success {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    color: var(--color-red);
+}
+
+/* .nav-pills .nav-link.signup-btn.active {
+    color: var(--color-red);
+} */
+
+/* div.nav-item {
+    background-color: var(--color-red);
+} */
+
+/* .divBtn {
+    background-color: blue;
+} */
