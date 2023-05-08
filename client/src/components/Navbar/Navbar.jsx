@@ -38,13 +38,13 @@ const Navbar = () => {
       <div className="app__navbar-book">
               <a onClick={handleClick} className="p__opensans">BOOK TABLE</a>
       </div>
-     <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+     <Nav.Link id="logout-btn" onClick={Auth.logout}>Logout</Nav.Link>
           </>
       ) : (
         // <div className="app__navbar-book">
         //     <a href='/' onClick={() => setShowModal(true)}  className="p__opensans">Login / Sign Up</a>
         //   </div>
-            <Nav.Link className="app__navbar-book" onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
+            <Nav.Link id="login-signup-link" className="app__navbar-book" onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
       )}
         <div className="app__navbar-smallscreen">
           <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)}/>
