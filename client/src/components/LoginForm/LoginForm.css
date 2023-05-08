@@ -2,7 +2,7 @@
     background-color: var(--color-red);
 }
 
-.signup-btn {
+.submit-btn {
     color: var(--color-red) !important;
 }
 
@@ -11,10 +11,6 @@ button.btn.btn-success {
     border-color: var(--color-yellow);
     color: var(--color-red);
 }
-
-/* react-aria8504545828-1-tab-signup {
-    background-color: var(--color-red) !important;
-} */
 
 /* .nav-pills .nav-link.signup-btn.active {
     color: var(--color-red);
