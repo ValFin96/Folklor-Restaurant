@@ -12,6 +12,10 @@ import './Navbar.css';
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  function handleClick() {
+    window.open("https://www.opentable.com.au/r/folklor-restaurant-and-bar-reservations-dawes-point?restref=196004&lang=en-AU&ot_source=Restaurant%20website")
+  }
   return (
     <>
     <nav className="app__navbar">
@@ -32,7 +36,7 @@ const Navbar = () => {
       {Auth.loggedIn() ? (
           <>
       <div className="app__navbar-book">
-        <a href='/' className="p__opensans">BOOK TABLE</a>
+              <a onClick={handleClick} className="p__opensans">BOOK TABLE</a>
       </div>
      <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
           </>
